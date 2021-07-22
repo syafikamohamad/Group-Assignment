@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<link rel="stylesheet" href="css/style.css">
+<body>
+
+  <!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="product.html" class="w3-bar-item w3-button">PRODUCT</a>
+    <a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+<br>
+<br>
+<br>
+
+<!-- Contact -->
+<div class="w3-container">
+<div class="w3-container w3-padding-64 w3-amber w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">FOR ORDER</h1>
+    <p><span class="w3-tag">FYI!</span> We offer a cash on delivery service at our area within 10 km .</p>
+    <p class="w3-xxlarge"><strong>For any order just fill here  or just send us a message</strong></p>
+    <form action="https://wa.me/601117988305">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many order" required name="types"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="For COD Date" value="2021-07-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Types of Product" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- Image of nims -->
+
+<div class="w3-container w3-black">
+  <h1>Our Customers</h1>
+</div>
+
+<div class="w3-row-padding w3-margin-top">
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="images/cust1.jpeg" style="width:100%">
+      <div class="w3-container">
+        <h5>Customer 1</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="images/cust2.jpeg" style="width:100%">
+      <div class="w3-container">
+        <h5>Customer 2</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="images/cust3.jpeg" style="width:100%">
+      <div class="w3-container">
+        <h5>Customer 3</h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row-padding w3-margin-top">
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="images/cust4 (2).jpeg" style="width:100%">
+      <div class="w3-container">
+        <h5>Customer 4</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="images/cust4.jpeg" style="width:100%">
+      <div class="w3-container">
+        <h5>Customer 5</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="images/feedback7.jpeg" style="width:100%">
+      <div class="w3-container">
+        <h5>Customer 6</h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<h4 align="center">For more info about NIMS Product,contact</h4>
+    <div class="w3-container w3-black">
+       <p style="text-align: center;"><a href="https://www.facebook.com/nimhq/">NIMS HQ FACEBOOK</a></p>
+       <p style="text-align: center;"><a href="https://www.instagram.com/nims.hq/?hl=en">NIMS HQ INSTAGRAM</a></p>
+       <p style="text-align: center;"><a href="https://wa.me/60179522408">PAGE MANAGER</a></p>
+       <h4 align="center">©️FITNIN,SYAFIKA,AYUNIE,NARINA</h4>
+    </div>
+  </div>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 9000);    
+}
+</script>
+
+</div>
+</body>
+</html>

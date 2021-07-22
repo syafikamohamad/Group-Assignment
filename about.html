@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>FANS Shop</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<link rel="stylesheet" href="css/style.css">
+  <style>
+    body
+    {
+      background-image: url(images/3.jpeg);
+    }
+  </body>
+  </style>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-xlarge w3-amber w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="product.html" class="w3-bar-item w3-button">PRODUCT</a>
+    <a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+
+ <div class="w3-display-middle w3-container w3-xlarge">
+    <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-black">CLICK ME!!</button></p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-bottom w3-black w3-padding-28 w3-medium">
+  <p align="center">For more info about NIMS Product,contact</p>
+  <p style="text-align: center;"><a href="https://www.facebook.com/nimhq/">NIMS HQ FACEBOOK</a>
+  <p style="text-align: center;"><a href="https://www.instagram.com/nims.hq/?hl=en">NIMS HQ INSTAGRAM</a></p>
+  <p style="text-align: center;"><a href="https://wa.me/60196887886">PAGE MANAGER</a></p>
+  <h4 align="center">©️FITNIN,SYAFIKA,AYUNIE,NARINA</h4>
+</footer>
+
+<!-- Menu Modal -->
+<div id="menu" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+
+<div class="w3-container w3-padding-64 w3-black w3-whitescale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About Nims</h1>
+    <img class="slide" src="images/nims8.jpeg" style="width:100%"> 
+    <p>CHOCOTUB is a cereal – coated with chocolate. Premium chocolate are made by “Nims” and very tasty. It is a huge chocolate jar in town compared to other brand in Peninsular Malaysia.The price are very affordable as it price RM 15 per tub.
+    It is weighted 250 gram plus and minus. All of the chocotub have similar amount of gram due to the weighing technology used by the “Nims” company.
+    There are many seller out there are selling this chocotub nearby your place. It is easier to contact more on social media such as Instagram, Facebook, Twitter and etc.Therefore, you don’t have to worry about how to get one.
+  <p><strong>FANS Member </strong></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>Nur Syafika</p>
+        <img src="images/pikaa.jpeg" class="w3-circle w3-margin-bottom" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Fitnin Fitriah</p>
+        <img src="images/fit.jpeg" class="w3-circle w3-margin-bottom" style="width:50%">
+      </div>
+      <div class="w3-third">
+        <p>Nur Ayunie Najlaa</p>
+        <img src="images/baby.jpeg" class="w3-circle w3-margin-bottom" style="width:50%">
+      </div>
+      <div class="w3-third">
+        <p>Nur Narina Nadia</p>
+        <img src="images/nari.jpeg" class="w3-circle w3-margin-bottom" style="width:50%">
+      </div>
+      
+    </div>
+  </div>
+
+    <h1><b>Opening Hours</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Fri & Sat CLOSED</p>
+        <p>Wednesday 10.00 - 24.00</p>
+        <p>Thursday 10:00 - 24:00</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Tue 10:00 - 12:00</p>
+        <p>Mon 10:00 - 23:00</p>
+      </div>
+    </div>
+    
+    <div class="w3-container">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Location</h1>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.9162906444644!2d101.4230399139514!3d3.1168457977304036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc577da4bc6bbd%3A0x4901577b0618a45c!2sNIMS%20ADELICIOUSZ%20SDN%20BHD%20(%20Factory%20)!5e0!3m2!1sen!2smy!4v1626789418288!5m2!1sen!2smy" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+</div>
+
+<script>
+w3.slideshow(".slides", 1500);
+</script>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+</body>
+</html>

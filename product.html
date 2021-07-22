@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<link rel="stylesheet" href="css/style.css">
+<body>
+
+  <!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-xlarge w3-amber w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="product.html" class="w3-bar-item w3-button">PRODUCT</a>
+    <a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+
+<!-- Product Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge w3-animate-zoom" id="product">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE PRODUCT</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Dark choc');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Dark Choc</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'White Choc');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">White Choc</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Combo Set');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Combo Set</div>
+      </a>
+    </div>
+
+    <div id="Dark choc" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b> Choco Ball</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM15</span></h1>
+      <img src="images/chocoball.jpeg" style="width:120px" class="w3-circle w3-right" alt="member"></p>
+      <p class="w3-text-grey">Cruncy and loaded with chocolate</p>
+      <hr>
+      
+      <h1><b>Choc Rice</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">RM13</span></h1>
+      <img src="images/cocorice.jpeg" style="width:120px" class="w3-circle w3-right" alt="member"></p>
+      <p class="w3-text-grey">Cruncy and loaded with chocolate </p>
+      <hr>
+      
+      <h1><b>Mini Cococrunch</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM15.00</span></h1>
+      <img src="images/cococrunch.jpeg" style="width:120px" class="w3-circle w3-right" alt="member"></p>
+      <p class="w3-text-grey">Cruncy and loaded with chocolate </p>
+      <hr>
+
+      <h1><b>Choco Krisp</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM15.00</span></h1>
+      <img src="images/cocokrisp.jpeg" style="width:120px" class="w3-circle w3-right" alt="member"></p>
+      <p class="w3-text-grey">Crispy and loaded with chocolate</p>
+      <hr>
+
+      <h1><b>Choco Chips Cookies</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM18</span></h1>
+      <img src="images/kokis.jpeg" style="width:120px" class="w3-circle w3-right" alt="member"></p>
+      <p class="w3-text-grey">Cruncy and loaded with chocolate</p>
+      <hr>
+    </div>
+
+
+<div id="White Choc" class="w3-container menu w3-padding-64 w3-white">
+      <h1><b>Rainbow Cereal With White Choc</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">RM17.00</span></h1>
+      <p class="w3-text-grey">Blue,Pink,Purple,Yellow </p>
+      <hr>
+      <div class="w3-content w3-display-container w3-padding-64">
+        <img class="mySlides" src="images/biru.jpeg" style="width:100%">
+        <img class="mySlides" src="images/pink.jpeg" style="width:100%">
+        <img class="mySlides" src="images/purple.jpeg" style="width:100%">
+        <img class="mySlides" src="images/kuning.jpeg" style="width:100%">
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+</div>
+
+  <div id="Combo Set" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Combo A</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM38.00</span></h1>
+      <img src="images/pakej1.jpeg" style="width:120px" class="w3-border w3-right" alt="member"></p>
+      <p class="w3-text-grey">1 Mini Coco Crunh, 2 Coco Rice </p>
+      <hr>
+
+      <h1><b>Combo B</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM38.00</span></h1>
+      <img src="images/pakej2.jpeg" style="width:120px" class="w3-border w3-right" alt="member"></p>
+      <p class="w3-text-grey">1 Choco Rice, 2 Mini Coco Crunch </p>
+      <hr>
+
+      <h1><b>Combo C</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM40.00</span></h1>
+      <img src="images/pakej3.jpeg" style="width:120px" class="w3-border w3-right" alt="member"></p>
+      <p class="w3-text-grey">1 Coco Rice, 2 Coco Ball</p>
+      <hr>
+      
+      <h1><b>Combo D</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM40.00</span></h1>
+      <img src="images/pakej4.jpeg" style="width:120px" class="w3-border w3-right" alt="member"></p>
+      <p class="w3-text-grey">1 Coco Rice, 2 Coco Ball</p>
+      <hr>
+
+      <h1><b>Combo E</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM40.00</span></h1>
+      <img src="images/pakej5.jpeg" style="width:120px" class="w3-border w3-right" alt="member"></p>
+      <p class="w3-text-grey">1 Coco Rice, 1 Mini Coco Crunh, 1 Choco Ball</p>
+      <hr>
+
+      <h1><b>Combo F</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM40.00</span></h1>
+      <img src="images/pakej6.jpeg" style="width:120px" class="w3-border w3-right" alt="member"></p>
+      <p class="w3-text-grey">2 Coco Rice, 1 Krisp</p>
+      <hr>
+
+      <h1><b>Combo G</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM40.00</span></h1>
+      <img src="images/pakej7.jpeg" style="width:120px" class="w3-border w3-right" alt="member"></p>
+      <p class="w3-text-grey">1 Coco Krisp, 1 Mini Coco Crunch, 1 Coco Rice</p>
+      <hr>
+      
+      <h1><b>Combo H</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM40.00</span></h1>
+      <img src="images/pakej8.jpeg" style="width:120px" class="w3-border w3-right" alt="member"></p>
+      <p class="w3-text-grey">1 Coco Krisp, 1 Mini Coco Crunch, 1 Choco Ball</p>
+      <hr>
+
+      <h1><b>Combo I</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM40.00</span></h1>
+      <img src="images/pakej9.jpeg" style="width:120px" class="w3-border w3-right" alt="member"></p>
+      <p class="w3-text-grey">2 Coco Krisp, 1 Coco Rice</p>
+    </div>
+  </div>
+
+<div class="w3-container w3-black">
+       <p align="center">For more info about NIMS Product,contact</p>
+       <p style="text-align: center;"><a href="https://www.facebook.com/nimhq/">NIMS HQ FACEBOOK</a></p>
+       <p style="text-align: center;"><a href="https://www.instagram.com/nims.hq/?hl=en">NIMS HQ INSTAGRAM</a></p>
+       <p style="text-align: center;"><a href="https://wa.me/60192659685">PAGE MANAGER</a></p>
+       <h4 align="center">©️FITNIN,SYAFIKA,AYUNIE,NARINA</h4>
+  </div>
+</div>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</div>
+</body>
+</html>
